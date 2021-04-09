@@ -12,11 +12,25 @@ const availableBoards = [
   },
   {
     name: 'esp82664M',
-    description: 'Wemos/NodeMCU',
-    default: true,
+    description: 'Wemos/NodeMCU UFS 2Mb',
+    default: false,
     show: true,
     platformio_entries: {
       'board_build.ldscript': 'eagle.flash.4m2m.ld',
+    },
+    tooltip: 'stepFeaturesBoard82664MTooltip',
+    include_features: [],
+    exclude_features: [],
+    defines: {},
+  },
+    {
+    name: 'esp82664M',
+    description: 'Wemos/NodeMCU 160Mhz UFS 2Mb',
+    default: false,
+    show: true,
+    platformio_entries: {
+      'board_build.ldscript': 'eagle.flash.4m2m.ld',
+      'board_build.f_cpu': '160000000L',
     },
     tooltip: 'stepFeaturesBoard82664MTooltip',
     include_features: [],
