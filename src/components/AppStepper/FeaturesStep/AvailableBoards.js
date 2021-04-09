@@ -24,8 +24,8 @@ const availableBoards = [
     defines: {},
   },
     {
-    name: 'esp82664M',
-    description: 'Wemos/NodeMCU 160Mhz UFS 2Mb',
+    name: 'esp82664M160',
+    description: 'Wemos/NodeMCU UFS 2Mb 160Mhz',
     default: false,
     show: true,
     platformio_entries: {
